@@ -27,6 +27,9 @@ export function CaseStudyPage() {
       return;
     }
 
+    // Update page title
+    document.title = `project/${projectIndex}`;
+
     // Hero parallax animation
     if (heroRef.current) {
       gsap.to(heroRef.current.querySelector('.hero-image'), {
